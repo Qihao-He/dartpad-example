@@ -16,13 +16,18 @@ class PowerGrid {
   }
 }
 
+abstract class building {
+  int height;
+}
+
 abstract class PowerPlant {
   int costOfEnergy;
   bool turnOn(String duration);
 }
 
-class NuclearPlant implements PowerPlant {
+class NuclearPlant implements PowerPlant, building{
   int costOfEnergy;
+  int height = 100;
   bool turnOn(String duration) {
     print('I\'m a nuclear plant, turning on!');
     return true;
