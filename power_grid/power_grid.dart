@@ -27,6 +27,10 @@ class NuclearPlant implements PowerPlant {
     print('I\'m a nuclear plant, turning on!');
     return true;
   }
+  
+  meltDown() {
+    print('Blows Up!!!');
+  }
 }
 
 class SolarPlant implements PowerPlant {
