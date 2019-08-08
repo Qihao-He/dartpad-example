@@ -1,6 +1,6 @@
 void main() {
   final myTranslator = const Translator('rojo');
-  final mySecondTranslator = const Translator('asdfas');
+  final mySecondTranslator = const Translator('rojo');
 
   print(myTranslator == mySecondTranslator);
 }
