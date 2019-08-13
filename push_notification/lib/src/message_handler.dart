@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -10,10 +11,25 @@ class MessageHandler extends StatefulWidget {
 class _MessageHandlerState extends State<MessageHandler> {
   final Firestore _db = Firestore.instance;
   final FirebaseMessaging _fcm = FirebaseMessaging();
+  StreamSubscription iosSubscription;
 
   @override
   void initState() {
     super.initState();
+
+    if (Platform.isIOS) {
+      iosSubscription = _fcm.onIosSettingsRegistered.listen((data) {
+        _saveDeviceToken();
+      });
+      
+      _fcm.requestNotificationPermissions(IosNotificationSettings());
+    } else {
+      _saveDeviceToken();
+    }
+
+    // _fcm.subscribeToTopic('puppies');
+    _fcm.unsubscribeFromTopic('puppies');
+
     _fcm.configure(
       onMessage: (Map<String, dynamic> message) async {
         print("onMessage: $message");
@@ -55,5 +71,30 @@ class _MessageHandlerState extends State<MessageHandler> {
   @override
   Widget build(BuildContext context) {
     return null;
+  }
+
+  // Get the token, save ti to the database for current user
+  _saveDeviceToken() async {
+    // get the current user
+    String uid = 'jeffd23';
+    // FirebaseUser user = await _auth.currentUser();
+
+    // Get the token for this device
+    String fcmToken = await _fcm.getToken();
+
+    // Save ti to Firestore
+    if (fcmToken != null) {
+      var tokenRef = _db
+          .collection('users')
+          .document(uid)
+          .collection('tokens')
+          .document(fcmToken);
+
+      await tokenRef.setData({
+        'token': fcmToken,
+        'createAt': FieldValue.serverTimestamp(),
+        'platform': Platform.operatingSystem
+      });
+    }
   }
 }
