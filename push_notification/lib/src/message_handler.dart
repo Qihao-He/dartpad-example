@@ -73,7 +73,7 @@ class _MessageHandlerState extends State<MessageHandler> {
     return null;
   }
 
-  // Get the token, save ti to the database for current user
+  // Get the token, save it to the database for current user
   _saveDeviceToken() async {
     // get the current user
     String uid = 'jeffd23';
