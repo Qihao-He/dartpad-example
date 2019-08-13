@@ -82,7 +82,7 @@ class _MessageHandlerState extends State<MessageHandler> {
     // Get the token for this device
     String fcmToken = await _fcm.getToken();
 
-    // Save ti to Firestore
+    // Save it to Firestore
     if (fcmToken != null) {
       var tokenRef = _db
           .collection('users')
