@@ -1,0 +1,1 @@
+click button game, keep clicking the button, if gap of stop time is more than 1 second then fail.

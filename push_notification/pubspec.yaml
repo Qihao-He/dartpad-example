@@ -1,5 +1,5 @@
 name: push_notification
-description: A new Flutter project.
+description: A new Flutter project. Push_notification from firebase cloud message using firebase cloud functions.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
