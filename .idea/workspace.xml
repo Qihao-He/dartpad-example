@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de4b78c3-5f43-4f61-b234-7272bea9af30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dartpad-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dartpad-example.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello_world/event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/hello_world/event.dart" afterDir="false" />
     </list>
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello_world/event.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1179">
-              <caret line="548" lean-forward="true" selection-start-line="548" selection-end-line="548" />
+            <state relative-caret-position="17430">
+              <caret line="581" column="4" selection-start-line="581" selection-start-column="4" selection-end-line="581" selection-end-column="4" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -119,17 +118,19 @@
       <workItem from="1574039103796" duration="9871000" />
       <workItem from="1574101310145" duration="1618000" />
       <workItem from="1574140263965" duration="131000" />
+      <workItem from="1574188225661" duration="659000" />
+      <workItem from="1574275037129" duration="105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11620000" />
+    <option name="totallyTimeSpent" value="12384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-1087" width="1920" height="2137" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08779443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06423983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -146,7 +147,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.083909184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.03158934" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="11" />
@@ -190,8 +191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello_world/event.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1179">
-          <caret line="548" lean-forward="true" selection-start-line="548" selection-end-line="548" />
+        <state relative-caret-position="17430">
+          <caret line="581" column="4" selection-start-line="581" selection-start-column="4" selection-end-line="581" selection-end-column="4" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
